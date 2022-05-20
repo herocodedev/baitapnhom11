@@ -1,0 +1,225 @@
+a {
+  text-decoration: none;
+  color: #333;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+.section-title {
+  position: relative;
+}
+.section-title p {
+  font-size: 16px;
+  margin-bottom: 5px;
+  font-weight: 400;
+}
+.section-title h4 {
+  font-size: 40px;
+  font-weight: 600;
+  text-transform: capitalize;
+  position: relative;
+  padding-bottom: 20px;
+  display: inline-block;
+}
+.section-title h4::before {
+  position: absolute;
+  content: "";
+  width: 80px;
+  height: 2px;
+  background-color: #d8d8d8;
+  bottom: 0;
+  left: 50%;
+  margin-left: -40px;
+}
+.section-title h4::after {
+  position: absolute;
+  content: "";
+  width: 50px;
+  height: 2px;
+  background: linear-gradient(
+      to right,
+      rgba(100, 200, 200, 1),
+      rgba(100, 200, 200, 1)
+    ),
+    linear-gradient(
+      to right,
+      rgba(255, 0, 0, 1),
+      rgba(255, 0, 180, 1),
+      rgba(0, 100, 200, 1)
+    );
+  left: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -25px;
+}
+.contact {
+  background-image: url("./img/googleMap.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+  z-index: 2;
+  color: #fff;
+  min-height: 100vh;
+}
+.contact-form input,
+textarea {
+  width: 100%;
+  border: 1px solid #555;
+  padding: 5px 10px;
+  text-transform: capitalize;
+  margin-top: 15px;
+  background-color: transparent;
+  color: #fff;
+}
+.contact:before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: #333;
+  z-index: -1;
+  opacity: 0.85;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=85)";
+}
+.single-contact {
+  text-align: left;
+  position: relative;
+  padding-left: 70px;
+  margin-bottom: 50px;
+  margin-top: 10px;
+}
+.single-contact i.fa {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  background-color: rgba(255, 0, 0, 0.56);
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 3px;
+}
+.single-contact h5 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+.single-contact p {
+  font-size: 15px;
+  font-weight: 400;
+}
+
+ul {
+  margin: 0;
+}
+.footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  color: #fff;
+  background-color: #7f5a83 !important;
+  background-image: linear-gradient(315deg, #7f5a83 0%, #0d324d 74%) !important;
+}
+
+.footer img {
+  width: 30px;
+  height: 30px;
+  border-radius: 40px;
+}
+
+.group-avt {
+  height: 100%;
+}
+.group-avt ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  /* padding-top: 12px; */
+  justify-content: center;
+}
+
+.group-avt li {
+  margin: 0 16px;
+}
+
+.work {
+  background-color: #fff;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.img-teacher {
+  width: 120px;
+  height: 120px;
+  margin-right: 12px;
+}
+
+/* temp */
+.hover-effect:hover {
+  background-size: 0 3px, 100% 3px;
+}
+.hover-effect {
+  background: linear-gradient(
+      to right,
+      rgba(100, 200, 200, 1),
+      rgba(100, 200, 200, 1)
+    ),
+    linear-gradient(
+      to right,
+      rgba(255, 0, 0, 1),
+      rgba(255, 0, 180, 1),
+      rgba(0, 100, 200, 1)
+    );
+  background-size: 100% 3px, 0 3px;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 400ms;
+}
+
+.nav-color {
+  color: #fff;
+  background-color: #7f5a83 !important;
+  background-image: linear-gradient(315deg, #7f5a83 0%, #0d324d 74%) !important;
+}
+
+.footer {
+  z-index: 50;
+}
+
+.btn-submit-form-ct {
+  transition: all 0.5s ease-in-out;
+  background-color: #fc575e !important;
+}
+
+.btn-submit-form-ct:hover {
+  background-color: #90d5ec !important;
+}
+
+.nav-link {
+  padding-left: 1.5rem !important;
+  padding-right: 1.5rem !important;
+  margin: 0 8px;
+}
+
+.nav-link:not(.hover-effect):hover {
+  background-color: #90d5ec;
+  color: black !important;
+  transition: all ease-in-out 0.5s;
+  border-radius: 8px;
+}
+
+.loading {
+  position: fixed;
+  z-index: 1000;
+  background: #000;
+  right: 0;
+  left: 0;
+  align-items: center;
+  justify-content: center;
+  bottom: 0;
+  top: 0;
+}

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>CSS Template</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./thongke.css" />
+    <style>
+      * {
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="loading d-none">
+      <img src="./img/loading.gif" alt="" />
+    </div>
+    <nav class="navbar nav-color navbar-expand-lg navbar-light">
+      <a class="navbar-brand" href="https://www.ctu.edu.vn/">
+        <img
+          style="width: 40px; height: 40px"
+          src="./img/logo-transparent.png"
+          alt=""
+        />
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" style="color: white" href="trangchu.html"
+              ><i class="fa-solid fa-house"></i> Home
+            </a>
+          </li>
+          <li class="nav-item">
+            <a style="color: white" class="nav-link" href="member.html">
+              <i class="fa-solid fa-user"></i>
+              Thành viên
+            </a>
+          </li>
+          <li class="nav-item">
+            <a style="color: white" class="nav-link" href="feature.html">
+              <i class="fa-solid fa-file-import"></i>
+              Nhập xuất hàng
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a
+              style="color: white"
+              class="nav-link hover-effect"
+              href="thongke.html"
+            >
+              <i class="fa-solid fa-chart-pie"></i>
+              Thống kê
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" style="color: white" href="contact.html">
+              <i class="fa-solid fa-users"></i>
+              Liên hệ
+            </a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input
+            class="form-control mr-sm-2"
+            type="search"
+            placeholder="Tìm kiếm..."
+            aria-label="Search"
+          />
+          <button class="btn btn-outline-warning my-2 my-sm-0" type="submit">
+            Tìm kiếm
+          </button>
+        </form>
+      </div>
+    </nav>
+
+    <div class="container">
+      <h1 class="text-center my-4">Thống kê</h1>
+      <table class="table">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Tên sản phẩm</th>
+            <th scope="col">Tổng sản phẩm đã nhập</th>
+            <th scope="col">Tổng sản phẩm đã xuất</th>
+          </tr>
+        </thead>
+        <tbody class="body-table"></tbody>
+      </table>
+    </div>
+
+    <div class="footer">
+      <div class="py-1 d-flex px-3 justify-content-between align-items-center">
+        <div class="teacher-avt">
+          <img src="./img/teacher.png" alt="" />
+        </div>
+        <div class="">Made in nhóm 11 (2021)</div>
+
+        <div class="group-avt">
+          <ul>
+            <li><img src="./img/hot_boy.jpg" alt="" /></li>
+            <li><img src="./img/hot_girl.jpg" alt="" /></li>
+            <li><img src="./img/hot_streamer.jpg" alt="" /></li>
+            <li><img src="./img/khanh_van.jpg" alt="" /></li>
+            <li><img src="./img/cat_vy.jpg" alt="" /></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script
+    src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js"
+    integrity="sha512-odNmoc1XJy5x1TMVMdC7EMs3IVdItLPlCeL5vSUPN2llYKMJ2eByTTAIiiuqLg+GdNr9hF6z81p27DArRFKT7A=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <script src="./thongke.js"></script>
+</html>
