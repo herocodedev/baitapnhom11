@@ -58,7 +58,7 @@ const renderData = (id) => {
   }
   if (index !== -1) {
     htmls = `
-        <h1 class="text-center mb-4">Giới Thiệu</h1>
+        <h1 class="text-center mb-4 text-white">Giới Thiệu</h1>
         <div class="page-content page-container" id="page-content">
           <div class="padding">
             <div class="row container d-flex justify-content-center">
@@ -170,7 +170,7 @@ const renderData = (id) => {
           </div>
         </div>
         <div class="">
-          <h1 class="text-center mb-4">Giảng viên hướng dẫn</h1>
+          <h1 class="text-center mb-4 text-white">Giảng viên hướng dẫn</h1>
           <div class="work rounded py-4">
             <div class="d-flex gap justify-content-center align-items-center">
               <img class="img-teacher" src="./img/teacher_1.png" alt="" />
@@ -194,7 +194,7 @@ const renderData = (id) => {
       `;
   } else {
     htmls = `
-    <h1 class="text-center mb-4">Phân công công việc</h1>
+    <h1 class="text-center mb-4 text-white">Phân công công việc</h1>
     <div class="work mb-4">
       <table border="1" style="width: 100%; cursor: pointer">
         <tr>
@@ -228,7 +228,7 @@ const renderData = (id) => {
       </table>
     </div>
     <div class="">
-      <h1 class="text-center mb-4">Giảng viên hướng dẫn</h1>
+      <h1 class="text-center mb-4 text-white">Giảng viên hướng dẫn</h1>
       <div class="work rounded py-4">
         <div
           class="d-flex gap justify-content-center align-items-center"
