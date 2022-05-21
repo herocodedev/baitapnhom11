@@ -45,18 +45,13 @@
 
         Your browser does not support HTML video.
       </video>
-      <div class="fake-audio" style="opacity: 0">
-        <iframe
-          width="100%"
-          height="100%"
-          src="https://www.youtube.com/embed/jcImHWNOjrU?autoplay=1"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen="allowfullscreen"
-        ></iframe>
-      </div>
     </div>
+    <audio
+      src="./audio/record.mp3"
+      controls
+      autoplay
+      style="display: none"
+    ></audio>
     <nav
       class="navbar nav-color navbar-expand-lg navbar-light"
       style="opacity: 0.8"
@@ -207,6 +202,7 @@
   </body>
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
   <script
     src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -229,7 +225,7 @@
     setTimeout(() => {
       loadingEl.classList.remove("d-flex");
       loadingEl.classList.add("d-none");
-    }, 4000);
+    }, 2000);
   </script>
 </html>
 
