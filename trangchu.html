@@ -39,7 +39,27 @@
     <div class="loading d-none">
       <img src="./img/loading.gif" alt="" />
     </div>
-    <nav class="navbar nav-color navbar-expand-lg navbar-light">
+    <div class="video-demo">
+      <video autoplay loop id="myVideo">
+        <source src="./video/videodemo.mp4" type="video/mp4" />
+
+        Your browser does not support HTML video.
+      </video>
+
+      <!-- <iframe
+        width="100%"
+        height="100%"
+        src="https://www.youtube.com/embed/jcImHWNOjrU?autoplay=1"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen="allowfullscreen"
+      ></iframe> -->
+    </div>
+    <nav
+      class="navbar nav-color navbar-expand-lg navbar-light"
+      style="opacity: 0.8"
+    >
       <a class="navbar-brand" href="https://www.ctu.edu.vn/">
         <img
           style="width: 40px; height: 40px"
@@ -76,6 +96,12 @@
             </a>
           </li>
           <li class="nav-item">
+            <a style="color: white" class="nav-link" href="idea.html">
+              <i class="fa-solid fa-circle-question"></i>
+              Ý tưởng
+            </a>
+          </li>
+          <li class="nav-item">
             <a style="color: white" class="nav-link" href="feature.html">
               <i class="fa-solid fa-file-import"></i>
               Nhập xuất hàng
@@ -109,54 +135,57 @@
         </form>
       </div>
     </nav>
-
-    <div class="container-fluid">
-      <h2 class="text-center my-4">NỘI DUNG YÊU CẦU</h2>
-      <!--thêm nội của nhóm-->
-      <table border="1" style="width: 100%; border: 1px solid #000">
-        <thead class="thead-dark">
-          <tr>
-            <th class="text-center">TÊN ĐỀ TÀI</th>
-            <th class="text-center">MÔ TẢ</th>
-            <th class="text-center">CHI TIẾT ĐỒ ÁN</th>
-            <th class="text-center">MỤC TIÊU</th>
-          </tr>
-        </thead>
-        <tr>
-          <td style="max-width: 200px; padding: 12px">
-            Ứng dụng ioT vào dự báo nhu cầu laptop HP và DELL
-            <br />
-            Giảng viên hướng dẫn:
-            <a href="https://www.facebook.com/vankhanh.mkd"
-              >Nguyễn Văn Khanh.</a
-            >
-          </td>
-          <td style="max-width: 200px; padding: 12px">
-            Cụ thế đồ án của nhóm gồm những nội dung như sau:
-            <ul>
-              <li>Page 1: Home</li>
-              <li>
-                Page 2: Trang thành viên (Giới thiệu,phân công công việc,...)
-              </li>
-              <li>Page 3: Nhập, xuất số lượng và đồ thị biễu diễn</li>
-              <li>Page 4: Thống kê số lượng đã nhập, xuất</li>
-              <li>Page 5: Trang liên hệ</li>
-            </ul>
-          </td>
-          <td style="max-width: 200px; padding: 12px">
-            Đồ án trình bày khái quát được các trang yêu cầu đề ra. Bao gồm:
-            nhập, xuất, vẽ biểu đồ dữ liệu. Có thông tin liên hệ và các hiệu ứng
-            theo yêu cầu
-          </td>
-          <td style="max-width: 200px; padding: 12px">
-            Biết được cách viết trang wed. Thống kê được số lượng, lập được biểu
-            đồ cột để thống kê
-          </td>
-        </tr>
-      </table>
-    </div>
-
-    <div class="footer">
+    <section class="py-5 py-md-7" id="home">
+      <div class="container">
+        <div class="row">
+          <div class="col-6">
+            <div class="work rounded my-2 py-4">
+              <div class="d-flex gap justify-content-center align-items-center">
+                <div class="">
+                  <h3 class="text-center">NỘI DUNG THỰC HIỆN</h3>
+                  <div class="">
+                    <p>Trang 1: Home</p>
+                    <p>
+                      Trang 2: Trang thành viên (Giới thiệu,phân công công
+                      việc,...)
+                    </p>
+                    <p>Trang 3: Nhập, xuất số lượng và đồ thị biễu diễn</p>
+                    <p>Trang 4: Thống kê số lượng đã nhập, xuất</p>
+                    <p>Trang 5: Trang liên hệ</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="work rounded py-4">
+              <div class="d-flex gap justify-content-center align-items-center">
+                <div class="">
+                  <h3 class="text-center">MỤC TIÊU THỰC HIỆN</h3>
+                  <ul class="">
+                    <li>Biết được cách viết trang web</li>
+                    <li>Vẽ được sơ đồ nhập xuất HP và DELL</li>
+                    <li>
+                      Dự báo được nhu cầu laptop HP và DELL thông qua kết quả
+                      nhập xuất
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 play-wrapper py-5">
+            <img
+              src="../img/macbook.png"
+              class="img-fluid d-block mx-auto"
+              alt="MacBook"
+            />
+            <div class="play d-flex flex-row align-item-center show-video">
+              <em class="icon" data-feather="play"></em>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="footer" style="opacity: 0.8">
       <div class="py-1 d-flex px-3 justify-content-between align-items-center">
         <div class="teacher-avt">
           <img src="./img/teacher.png" alt="" />
@@ -202,3 +231,49 @@
     }, 2000);
   </script>
 </html>
+
+<!-- <div class="container-fluid">
+  <h2 class="text-center my-4">NỘI DUNG YÊU CẦU</h2>
+
+  <table border="1" style="width: 100%; border: 1px solid #000">
+    <thead class="thead-dark">
+      <tr>
+        <th class="text-center">TÊN ĐỀ TÀI</th>
+        <th class="text-center">MÔ TẢ</th>
+        <th class="text-center">CHI TIẾT ĐỒ ÁN</th>
+        <th class="text-center">MỤC TIÊU</th>
+      </tr>
+    </thead>
+    <tr>
+      <td style="max-width: 200px; padding: 12px">
+        Ứng dụng ioT vào dự báo nhu cầu laptop HP và DELL
+        <br />
+        Giảng viên hướng dẫn:
+        <a href="https://www.facebook.com/vankhanh.mkd"
+          >Nguyễn Văn Khanh.</a
+        >
+      </td>
+      <td style="max-width: 200px; padding: 12px">
+        Cụ thế đồ án của nhóm gồm những nội dung như sau:
+        <ul>
+          <li>Page 1: Home</li>
+          <li>
+            Page 2: Trang thành viên (Giới thiệu,phân công công việc,...)
+          </li>
+          <li>Page 3: Nhập, xuất số lượng và đồ thị biễu diễn</li>
+          <li>Page 4: Thống kê số lượng đã nhập, xuất</li>
+          <li>Page 5: Trang liên hệ</li>
+        </ul>
+      </td>
+      <td style="max-width: 200px; padding: 12px">
+        Đồ án trình bày khái quát được các trang yêu cầu đề ra. Bao gồm:
+        nhập, xuất, vẽ biểu đồ dữ liệu. Có thông tin liên hệ và các hiệu ứng
+        theo yêu cầu
+      </td>
+      <td style="max-width: 200px; padding: 12px">
+        Biết được cách viết trang wed. Thống kê được số lượng, lập được biểu
+        đồ cột để thống kê
+      </td>
+    </tr>
+  </table>
+</div> -->

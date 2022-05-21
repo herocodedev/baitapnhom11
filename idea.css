@@ -1,0 +1,241 @@
+ul {
+  margin: 0;
+}
+body {
+  background-color: #f3f3f3;
+  /* background-image: url("./img/background.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  background-size: cover;
+  color: #fff !important; */
+}
+.footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  color: #fff;
+
+  background-color: #7f5a83 !important;
+  background-image: linear-gradient(315deg, #7f5a83 0%, #0d324d 74%) !important;
+}
+
+.footer img {
+  width: 30px;
+  height: 30px;
+  border-radius: 40px;
+}
+
+.group-avt {
+  height: 100%;
+}
+.group-avt ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  /* padding-top: 12px; */
+  justify-content: center;
+}
+
+.group-avt li {
+  margin: 0 16px;
+}
+
+.work {
+  background-color: #fff;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.img-teacher {
+  width: 120px;
+  height: 120px;
+  margin-right: 12px;
+}
+
+/* temp */
+.hover-effect:hover {
+  background-size: 0 3px, 100% 3px;
+}
+.hover-effect {
+  background: linear-gradient(
+      to right,
+      rgba(100, 200, 200, 1),
+      rgba(100, 200, 200, 1)
+    ),
+    linear-gradient(
+      to right,
+      rgba(255, 0, 0, 1),
+      rgba(255, 0, 180, 1),
+      rgba(0, 100, 200, 1)
+    );
+  background-size: 100% 3px, 0 3px;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 400ms;
+}
+
+.nav-color {
+  color: #fff;
+  background-color: #7f5a83 !important;
+  background-image: linear-gradient(315deg, #7f5a83 0%, #0d324d 74%) !important;
+}
+.nav-link {
+  padding-left: 1.5rem !important;
+  padding-right: 1.5rem !important;
+  margin: 0 8px;
+}
+
+.nav-link:not(.hover-effect):hover {
+  background-color: #90d5ec;
+  color: black !important;
+  transition: all ease-in-out 0.5s;
+  border-radius: 8px;
+}
+
+.loading {
+  position: fixed;
+  z-index: 1000;
+  background: #000;
+  right: 0;
+  left: 0;
+  align-items: center;
+  justify-content: center;
+  bottom: 0;
+  top: 0;
+}
+
+p {
+  margin: 0;
+}
+
+.video-demo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.area {
+  background: #4e54c8c5;
+  background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);
+  width: 100%;
+  height: 100vh;
+}
+.circles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.circles li {
+  position: absolute;
+  display: block;
+  list-style: none;
+  width: 20px;
+  height: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  animation: animate 25s linear infinite;
+  bottom: -150px;
+}
+
+.circles li:nth-child(1) {
+  left: 25%;
+  width: 80px;
+  height: 80px;
+  animation-delay: 0s;
+}
+
+.circles li:nth-child(2) {
+  left: 10%;
+  width: 20px;
+  height: 20px;
+  animation-delay: 2s;
+  animation-duration: 12s;
+}
+
+.circles li:nth-child(3) {
+  left: 70%;
+  width: 20px;
+  height: 20px;
+  animation-delay: 4s;
+}
+
+.circles li:nth-child(4) {
+  left: 40%;
+  width: 60px;
+  height: 60px;
+  animation-delay: 0s;
+  animation-duration: 18s;
+}
+
+.circles li:nth-child(5) {
+  left: 65%;
+  width: 20px;
+  height: 20px;
+  animation-delay: 0s;
+}
+
+.circles li:nth-child(6) {
+  left: 75%;
+  width: 110px;
+  height: 110px;
+  animation-delay: 3s;
+}
+
+.circles li:nth-child(7) {
+  left: 35%;
+  width: 150px;
+  height: 150px;
+  animation-delay: 7s;
+}
+
+.circles li:nth-child(8) {
+  left: 50%;
+  width: 25px;
+  height: 25px;
+  animation-delay: 15s;
+  animation-duration: 45s;
+}
+
+.circles li:nth-child(9) {
+  left: 20%;
+  width: 15px;
+  height: 15px;
+  animation-delay: 2s;
+  animation-duration: 35s;
+}
+
+.circles li:nth-child(10) {
+  left: 85%;
+  width: 150px;
+  height: 150px;
+  animation-delay: 0s;
+  animation-duration: 11s;
+}
+
+@keyframes animate {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+    border-radius: 0;
+  }
+
+  100% {
+    transform: translateY(-1000px) rotate(720deg);
+    opacity: 0;
+    border-radius: 50%;
+  }
+}

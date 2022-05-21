@@ -3,6 +3,12 @@ ul {
 }
 body {
   background-color: #f3f3f3;
+  /* background-image: url("./img/background.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  background-size: cover;
+  color: #fff !important; */
 }
 .footer {
   position: fixed;
@@ -97,4 +103,24 @@ body {
   justify-content: center;
   bottom: 0;
   top: 0;
+}
+
+p {
+  margin: 0;
+}
+
+.video-demo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
 }
